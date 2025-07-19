@@ -1,0 +1,3 @@
+[submodule "Concatenate_operator"]
+	path = Concatenate_operator
+	url = https://github.com/bohumil-kolouch/Concatenate_operator.git
