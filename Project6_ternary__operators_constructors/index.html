@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Project 6 — Ternary, Constructors & Nested Functions</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <script src="JS/main.js" defer></script>
+  <style>
+    body { font-family: system-ui, Arial, sans-serif; line-height: 1.4; margin: 2rem; }
+    section { margin-bottom: 2rem; }
+    label { display: inline-block; min-width: 9rem; }
+    input, button, select { font-size: 1rem; }
+    .result { margin-top: .5rem; padding: .5rem .75rem; background: #f6f6f6; border-radius: .5rem; }
+    code { background: #f0f0f0; padding: 0 .25rem; border-radius: .25rem; }
+  </style>
+</head>
+<body>
+  <h1>Project 6 — Ternary, Constructors & Nested Functions</h1>
+
+  <!-- 1) TERNARY OPERATION USING INPUT FROM THE BROWSER -->
+  <section>
+    <h2>1. Ternary Operation (Age Check)</h2>
+    <p>Enter your age and click “Check” — a ternary decides the message.</p>
+    <label for="age">Age:</label>
+    <input id="age" type="number" min="0" placeholder="e.g., 18" />
+    <button onclick="ageCheck()">Check</button>
+    <div id="ageResult" class="result" aria-live="polite"></div>
+  </section>
+
+  <!-- 2) CONSTRUCTOR WITH new/this + 3) DISPLAY RESULTS IN HTML -->
+  <section>
+    <h2>2–3. Constructor, <code>new</code>/<code>this</code>, and Display</h2>
+    <p>Select a gadget to display its details (created via a constructor):</p>
+    <label for="gadgetSelect">Choose:</label>
+    <select id="gadgetSelect">
+      <option value="1">Phone (g1)</option>
+      <option value="2">Laptop (g2)</option>
+      <option value="3">Tablet (g3)</option>
+    </select>
+    <button onclick="showGadget()">Show Gadget</button>
+    <div id="gadgetResult" class="result" aria-live="polite"></div>
+  </section>
+
+  <!-- 4) NESTED FUNCTION -->
+  <section>
+    <h2>4. Nested Function (Closure Demo)</h2>
+    <p>Click to run a function that contains another function which updates a private value.</p>
+    <button onclick="runNested()">Run Nested Function</button>
+    <div id="nestedResult" class="result" aria-live="polite"></div>
+  </section>
+</body>
+</html>

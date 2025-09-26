@@ -1,0 +1,2 @@
+# Project6_ternary__operators_constructors
+Learning Java Script
