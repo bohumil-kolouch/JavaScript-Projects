@@ -98,7 +98,7 @@ function drawWinLine(coordX1, coordY1, coordX2, coordY2) {
         c.lineTo(x, y);
         // Set width and color
         c.lineWidth = 10;
-        c.strokeStyle = 'rgba(70, 255, 33, .8)';
+        c.strokeStyle = 'rgba(0, 0, 0, 0.8)';
         // Draw line
         c.stroke();
 
@@ -129,8 +129,8 @@ function drawWinLine(coordX1, coordY1, coordX2, coordY2) {
     audio('./media/winGame.mp3');
     // Start animation loop
     animateLineDrawing();
-    // Wait 1 second, clear canvas, reset game, re-enable clicking
-    setTimeout(function () { clear(); resetGame(); }, 1000);
+    // Wait 2 second, clear canvas, reset game, re-enable clicking
+    setTimeout(function () { clear(); resetGame(); }, 2000);
 }
 
 // This function resets the game in the event of a tie or a win.
@@ -189,7 +189,7 @@ function checkWinConditions() {
     // This function plays the tie game sound.
     audio('./media/tie.mp3');
     // This function sets a .3 second timer before the resetGame is called.
-    setTimeout(function () { resetGame(); }, 500);
+    setTimeout(function () { resetGame(); }, 2000);
   }
 }
 
