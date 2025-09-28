@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>jQuery</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Load jQuery, so you can use the $() -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+</head>
+<body>
+
+<script>
+
+// Wait until the DOM is loaded.
+$(document).ready(function() {
+    // When the document is ready, append the body content.
+    $("html").append(
+        "<body>\
+            <div id='container'>\
+                <div id='inner'>\
+                    <h1>Basic jQuery</h1>\
+                    <p id='1'>Paragraph1</p>\
+                    <p id='2'>Paragraph2</p>\
+                    <p id='3'>Paragraph3</p>\
+                </div>\
+            </div>\
+        </body>"    
+    );
+
+    // Set the color of the <p> element with id="2" to red.
+    $("p#2").css({"color":"red"})
+
+    // Hide the <h1> element, when the paragraph with id="3" is clicked.
+    $("p#3").click(function() {
+        $('h1').hide();
+    });
+});
+    
+</script>
+
+</body>
+</html>
